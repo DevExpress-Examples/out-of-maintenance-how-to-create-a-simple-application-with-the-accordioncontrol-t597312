@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DataModel.cs](./CS/DxAccordionGettingStarted/DataModel.cs) (VB: [DataModel.vb](./VB/DxAccordionGettingStarted/DataModel.vb))
+* [MainWindow.xaml](./CS/DxAccordionGettingStarted/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DxAccordionGettingStarted/MainWindow.xaml))
+* [ViewModel.cs](./CS/DxAccordionGettingStarted/ViewModel.cs) (VB: [ViewModel.vb](./VB/DxAccordionGettingStarted/ViewModel.vb))
+<!-- default file list end -->
 # How to create a simple application with the AccordionControl
 
 

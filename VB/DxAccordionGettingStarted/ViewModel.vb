@@ -7,7 +7,7 @@ Namespace DxAccordionGettingStarted
     Public Class MainWindowViewModel
 
         Public Sub New()
-            Dim employeeDepartments = GetStuff().GroupBy(Function(x) x.Department).[Select](Function(x) New EmployeeDepartment(x.Key, x.ToArray()))
+            Dim employeeDepartments = GetStaff().GroupBy(Function(x) x.Department).[Select](Function(x) New EmployeeDepartment(x.Key, x.ToArray()))
             Me.EmployeeDepartments = New ObservableCollection(Of EmployeeDepartment)(employeeDepartments.ToArray())
         End Sub
 

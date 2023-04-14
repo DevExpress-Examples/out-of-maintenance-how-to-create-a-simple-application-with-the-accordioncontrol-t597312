@@ -1,16 +1,14 @@
-<dx:DXWindow  
+<Window  
    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-   xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
-   xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
    xmlns:dxa="http://schemas.devexpress.com/winfx/2008/xaml/accordion" 
    xmlns:local="clr-namespace:DxAccordionGettingStarted" 
    x:Class="DxAccordionGettingStarted.MainWindow" 
    Title="MainWindow" Height="350" Width="525">
-    <dx:DXWindow.DataContext>
+    <Window.DataContext>
         <local:MainWindowViewModel/>
-    </dx:DXWindow.DataContext>
+    </Window.DataContext>
     <Grid>
         <dxa:AccordionControl ItemsSource="{Binding EmployeeDepartments}" ChildrenPath="Employees"/>
     </Grid>
-</dx:DXWindow>
+</Window>

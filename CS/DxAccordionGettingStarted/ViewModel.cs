@@ -5,7 +5,7 @@ using System.Linq;
 namespace DxAccordionGettingStarted {
     public class MainWindowViewModel {
         public MainWindowViewModel() {
-            var employeeDepartments = Stuff.GetStuff()
+            var employeeDepartments = Staff.GetStaff()
                 .GroupBy(x => x.Department)
                 .Select(x => new EmployeeDepartment(x.Key, x.ToArray()));
             EmployeeDepartments = new ObservableCollection<EmployeeDepartment>(employeeDepartments.ToArray());
